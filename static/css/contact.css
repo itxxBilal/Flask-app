@@ -1,0 +1,46 @@
+body {
+    background-color: yellow;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-card {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.contact-card h2 {
+    text-align: center;
+    color: purple;
+}
+
+.contact-card label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-card input, .contact-card textarea, .contact-card button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-card button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-card button:hover {
+    background-color: red;
+    color: black;
+}

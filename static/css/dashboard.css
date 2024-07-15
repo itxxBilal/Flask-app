@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333333;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f316b193;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #000;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.section ul li strong {
+    color: #000;
+}
+
+.section ul li span {
+    color: #555;
+}
+
+.section ul li img {
+    display: block;
+    margin-top: 10px;
+}
+
+.section form {
+    margin-top: 20px;
+}
+
+.section form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.section form input, .section form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section form button {
+    background-color: #e2c509;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+}
+
+.section form button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}

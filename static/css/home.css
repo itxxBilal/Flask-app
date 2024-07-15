@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: yellow;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: transparent;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.nav-left .logo {
+    font-size: 24px;
+    color: black;
+}
+
+.nav-center a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-center a:hover {
+    color: red;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    min-height: 80vh;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-text .typewriter {
+    font-size: 36px;
+    color: purple;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: typing 3.5s steps(40, end) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.home-text button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.home-text button:hover {
+    background-color: red;
+    color: black;
+}
+
+.home-image {
+    flex: 1;
+    text-align: right;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+}

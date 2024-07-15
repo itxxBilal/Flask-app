@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="dashboard-container">
+    <h1>Dashboard</h1>
+    <div class="section">
+        <h2>Messages</h2>
+        <ul>
+            {% for message in messages %}
+                <li>
+                    <strong>Name:</strong> {{ message.name }}<br>
+                    <strong>Email:</strong> {{ message.email }}<br>
+                    <strong>Message:</strong> {{ message.message }}<br>
+                    <span><strong>Received at:</strong> {{ message.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Projects</h2>
+        <form action="{{ url_for('add_project') }}" method="POST" enctype="multipart/form-data">
+            <label for="name">Project Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="link">Project Link</label>
+            <input type="url" id="link" name="link" required>
+            
+            <label for="description">Description</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="image">Project Image</label>
+            <input type="file" id="image" name="image">
+            
+            <button type="submit">Add Project</button>
+        </form>
+        <ul>
+            {% for project in projects %}
+                <li>
+                    <a href="{{ project.link }}">{{ project.name }}</a>: {{ project.description }}
+                    {% if project.image %}
+                    <img src="{{ url_for('static', filename=project.image) }}" alt="{{ project.name }}" width="100">
+                    {% endif %}
+                    <form action="{{ url_for('delete_project', project_id=project.id) }}" method="POST" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <form action="{{ url_for('update_project', project_id=project.id) }}" method="POST" enctype="multipart/form-data" style="display:inline;">
+                        <button type="submit">Update</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+.about-card {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+}
+
+.about-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: purple;
+}
+
+.about-card .education, .about-card .experience, .about-card .projects {
+    margin-bottom: 20px;
+}
+
+.about-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-card li {
+    margin-bottom: 10px;
+}
+
+.about-card a {
+    color: purple;
+    text-decoration: none;
+}
+
+.about-card a:hover {
+    text-decoration: underline;
+}

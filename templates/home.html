@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home-container">
+    <div class="text-side">
+        <h1>I am Bilal</h1>
+        <h2 id="changing-text"></h2>
+        <button onclick="location.href='resume.pdf'">My Resume</button>
+    </div>
+    <div class="image-side">
+        <img src="{{ url_for('static', filename='images/1.jpg') }}" alt="Bilal's Picture">
+    </div>
+</div>
+<div class="social-links">
+    <a href="https://linkedin.com/in/bilal"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/bilal"><i class="fab fa-github"></i></a>
+    <a href="https://facebook.com/bilal"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com/bilal"><i class="fab fa-instagram"></i></a>
+</div>
+{% endblock %}

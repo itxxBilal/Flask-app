@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #333333);
+    color: #f4f4f4;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.nav-left .logo {
+    color: #ffdd00;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-center ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-center ul li {
+    display: inline;
+}
+
+.nav-center ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.nav-center ul li a:hover {
+    color: #ff0000;
+}
+
+.nav-right .available {
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-side {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-side h1, .text-side h2, .text-side button {
+    color: #f4f4f4;
+}
+
+.text-side button {
+    background-color: #ffdd00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.text-side button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.contact-card, .about-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+}
+
+.contact-card h1, .about-card h1, .about-card h2 {
+    color: #ffdd00;
+}
+
+.contact-card form, .about-card .section {
+    margin-top: 20px;
+}
+
+.contact-card label, .contact-card input, .contact-card textarea, .contact-card button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-card input, .contact-card textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.contact-card input::placeholder, .contact-card textarea::placeholder {
+    color: #888;
+}
+
+.contact-card button {
+    background-color: #ffdd00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-card button:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #ffdd00;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff0000;
+}
+
+.about-card .section {
+    margin-top: 20px;
+}
+
+.about-card .section h2 {
+    color: #ffdd00;
+    margin-bottom: 10px;
+}
+
+.about-card .section p, .about-card .section ul {
+    color: #f4f4f4;
+}
